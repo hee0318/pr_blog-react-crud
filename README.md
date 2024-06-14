@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# 블로그 (CRUD localStorage 사용하기)📂
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 개요
 
-## Available Scripts
+이 프로젝트는 React를 사용하여 개발된 블로그 애플리케이션입니다.  
+사용자는 블로그를 통해 다양한 글을 작성하고, 읽고, 관리할 수 있습니다.
 
-In the project directory, you can run:
+## 사용된 기술
 
-### `npm start`
+- **React**: 사용자 인터페이스를 구축하기 위한 라이브러리
+- **React DOM**: React와 DOM을 연동하기 위한 패키지
+- **React Router DOM**: 페이지 간 라우팅을 관리하기 위한 라이브러리
+- **React Scripts**: Create React App에서 제공하는 스크립트 및 설정
+- **Sass**: 스타일링을 위한 CSS 전처리기
+- **Testing Library**: 컴포넌트의 테스트를 위한 도구 (React, Jest DOM, User Event)
+- **Web Vitals**: 웹 애플리케이션 성능 측정 도구
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 주요 기능
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 로컬 저장소 (localStorage) 사용하기.
 
-### `npm test`
+이 페이지는 사용자가 작성한 게시물을 로컬 저장소에 저장하여 브라우저를 새로 고침하거나 다시 방문했을 때도 데이터를 유지합니다. 스토리지를 사용하여 CRUD를 구현합니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **게시물 저장**: 사용자가 새로운 게시물을 작성하여 제출하면 `localStorage`에 저장됩니다.
+- **게시물 업데이트**: 저장된 게시물 목록을 업데이트하여 새로운 게시물을 추가합니다.
+- **게시물 삭제**: 사용자가 게시물을 삭제하면 `localStorage`에서 해당 게시물을 제거합니다.
+- **페이지 이동**: 게시물을 저장한 후, 게시물 목록 페이지로 이동합니다.

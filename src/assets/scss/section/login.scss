@@ -1,0 +1,29 @@
+.loginWrap {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 65%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 3px;
+    }
+    button {
+      width: 65%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      background-color: #f3e0e0;
+    }
+    button:hover {
+      background-color: #f5e7e7;
+    }
+  }
+}

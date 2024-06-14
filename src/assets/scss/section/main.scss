@@ -1,0 +1,31 @@
+.mainWrap {
+  padding: 60px;
+  .mainList {
+    padding-bottom: 20px;
+    li {
+      list-style: none;
+      padding: 3px;
+    }
+  }
+  .mainImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 315px);
+    grid-template-rows: 200px 500px;
+    .post {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 250px;
+        height: 300px;
+      }
+      .title {
+        font-size: 1.4em;
+        margin-top: 20px;
+      }
+    }
+  }
+}

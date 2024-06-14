@@ -1,0 +1,39 @@
+.writeWrap {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  form {
+    margin-bottom: 20px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: relative;
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3e0e0;
+  }
+  button:hover {
+    background-color: #f1e8e8;
+  }
+}

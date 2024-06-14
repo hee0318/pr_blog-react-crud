@@ -1,0 +1,54 @@
+.headerWrap {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    padding: 10px;
+    font-size: 1.6em;
+    cursor: pointer;
+  }
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 20px 30px;
+        cursor: pointer;
+      }
+      li:hover {
+        color: #ccc;
+      }
+    }
+  }
+  .search {
+    input {
+      margin-top: 20px;
+      width: 200px;
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 18px;
+      padding: 5px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  .user {
+    display: flex;
+    padding: 15px;
+    .userId {
+      padding-top: 11px;
+      padding-right: 10px;
+    }
+    .login,
+    .logout {
+      padding: 5px 20px;
+      margin: 5px;
+      background-color: #f3e0e0;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .login:hover,
+    .logout:hover {
+      background-color: #f1e5e5;
+    }
+  }
+}
